@@ -1,6 +1,8 @@
 package ahmed.core.base;
 
 import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
 import java.util.UUID;
@@ -111,9 +113,18 @@ public class ApplicationContext {
 	    }
 	  }
 
-	private void loadProperties() {
+	  private void loadProperties() {
+		    properties = new Properties();
+		    FileInputStream inputStream;
 
-	}
+		    try {
+		      inputStream = new FileInputStream(Constants.PROPERTIES_APPLICATION_FILE_NAME);
+		      properties.load(inputStream);
+		      inputStream.close();
+		    } catch (IOException e) {
+//		      logger.error(Constants.ERROR_OTHER, "Unable to locate properties file : " + Constants.PROPERTIES_APPLICATION_FILE_NAME);
+		    }
+		  }
 	
 	 /**
 	   * Return unique instance of HbaseConnector
@@ -173,5 +184,8 @@ public class ApplicationContext {
 	// private static HashMap<String, Put> contactsPuts = null;
 	// private static HashMap<String, BufferedWriter> hdfsFileAppenders = null;
 	// private static HashMap<String, HDFSLogger> loggers = null;
+	public void flushContacts(boolean b) {
+		
+	}
 
 }
