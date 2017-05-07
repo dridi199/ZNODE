@@ -1,4 +1,4 @@
-package fr.edf.com.jobs;
+package fr.edf.dco.batch.spark.jobs;
 
 
 import java.util.Iterator;
@@ -14,7 +14,6 @@ import org.apache.spark.sql.hive.HiveContext;
 import ahmed.core.base.ApplicationContext;
 import ahmed.core.base.Constants;
 import ahmed.core.base.ContactFactory;
-import ahmed.*;
 
 
 public class HiveToHbaseJob {
@@ -41,7 +40,8 @@ public class HiveToHbaseJob {
 //      @Override
       public void call(Iterator<Row> rows) throws Exception {
         ApplicationContext context = ApplicationContext.getInstance();
-        ContactFactory factory = new ContactFactory();
+        @SuppressWarnings("unused")
+		ContactFactory factory = new ContactFactory();
 
 //        String line = null;
 //        AbstractContactRecord record = null;

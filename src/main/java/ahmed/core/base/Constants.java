@@ -35,6 +35,7 @@ public interface Constants {
 	CharSequence CONTACT_FILE_AWL_MESSAGES_RECEIVED = null;
 	CharSequence CONTACT_FILE_AWL_NOTIFICATIONS = null;
 	CharSequence CONTACT_FILE_AWL_EMAIL_TRACKING = null;
+	String CONTACT_SPARK_APP_HBASE_HIVE = null;
 	public static final String CONTACT_PROCESS_GOLABAL = "T0000";
 
 }

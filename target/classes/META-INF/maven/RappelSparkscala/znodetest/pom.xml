@@ -13,7 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+<scm>
+    <url>http://github.com/dridi199</url>
+    <connection>scm:git:ssh:///git@github.com/dridi199/ZNODE.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/dridi199/ZNODE.git</developerConnection>
+<!--     <tag>bhc-0.3.0</tag> -->
+  </scm>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
 <dependency>
@@ -35,6 +40,7 @@
      <artifactId>hadoop-common</artifactId>
      <version>2.7.2</version>
  </dependency>
+ 
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

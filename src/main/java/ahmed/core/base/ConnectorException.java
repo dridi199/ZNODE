@@ -1,5 +1,4 @@
 package ahmed.core.base;
 
-public class ConnectorException extends Exception {
-
-}
+//public class ConnectorException extends Exception {
+//}

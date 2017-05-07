@@ -1,9 +1,7 @@
 package ahmed.core.base;
 
-import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Properties;
 import java.util.UUID;
 
@@ -175,6 +173,7 @@ public class ApplicationContext {
 
 	private static volatile ApplicationContext singleton = null;
 	private static Properties properties;
+	@SuppressWarnings("unused")
 	private static HDFSLogger logger;
 	private static HbaseConnector hbase = null;
 	private static HdfsConnector hdfs = null;
