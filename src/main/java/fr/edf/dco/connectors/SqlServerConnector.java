@@ -49,4 +49,9 @@ public class SqlServerConnector  {
 //    driverClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 //    connectionUrl = "jdbc:sqlserver://" + this.host + ";instanceName=" + instance + ";DatabaseName=" + this.database;
   }
+
+public void disconnect() {
+	// TODO Auto-generated method stub
+	
+}
 }
