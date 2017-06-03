@@ -1,4 +1,5 @@
 bhc.properties
 target/
 .project
-.settings
+.settings/
+.classpath
